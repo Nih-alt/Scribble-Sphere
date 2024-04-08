@@ -17,10 +17,10 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/notify_logo"
         android:label="@string/app_name"
-        android:name=".NotifyApplication"
+        android:name=".ScribbleSphereApplication"
         android:roundIcon="@drawable/notify_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Notify"
+        android:theme="@style/Theme.ScribbleSphere"
         tools:targetApi="31">
 
         <provider

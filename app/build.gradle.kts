@@ -10,11 +10,11 @@ plugins {
 }
 
 android {
-    namespace = "com.aritra.notify"
+    namespace = "com.nihal.scribblesphere"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.aritra.notify"
+        applicationId = "com.nihal.scribblesphere"
         minSdk = 24
         targetSdk = 34
         versionCode = 13

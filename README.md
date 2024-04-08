@@ -23,7 +23,7 @@
   <a href="https://github.com/aritra-tech/Notify/releases"><img src="https://img.shields.io/github/downloads/aritra-tech/notify/total?color=orange&style=for-the-badge"/></a>
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/aritra-tech/Notify?style=for-the-badge">
   <a href=""><img src="https://img.shields.io/github/v/release/aritra-tech/notify?color=purple&include_prereleases&logo=github&style=for-the-badge"/></a>
-  <a href="https://play.google.com/store/apps/details?id=com.aritra.notify"><img src="https://img.shields.io/endpoint?color=purple&logo=google-play&style=for-the-badge&label=Play%20store&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.aritra.notify%26l%3DAndroid%26m%3D%24version"/></a>
+  <a href="https://play.google.com/store/apps/details?id=com.nihal.scribblesphere"><img src="https://img.shields.io/endpoint?color=purple&logo=google-play&style=for-the-badge&label=Play%20store&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.aritra.notify%26l%3DAndroid%26m%3D%24version"/></a>
   </br>
 </p>
 
