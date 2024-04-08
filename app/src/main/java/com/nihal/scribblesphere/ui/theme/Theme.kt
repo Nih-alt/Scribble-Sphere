@@ -70,7 +70,7 @@ private val LightColorPalette = lightColorScheme(
 )
 
 @Composable
-fun NotifyTheme(
+fun ScribbleSphereTheme(
     themeViewModel: ThemeViewModel = hiltViewModel(),
     // Dynamic color is available on Android 12+
     content: @Composable () -> Unit,

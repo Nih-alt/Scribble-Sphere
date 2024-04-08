@@ -17,7 +17,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.nihal.scribblesphere.R
-import com.nihal.scribblesphere.ui.theme.NotifyTheme
+import com.nihal.scribblesphere.ui.theme.ScribbleSphereTheme
 import com.nihal.scribblesphere.utils.Const
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -101,7 +101,7 @@ private fun calculateReadTime(words: Int, wordsPerMinute: Int = 238): Int {
 
 @Preview(showBackground = true)
 @Composable
-fun NoteStatsPreview() = NotifyTheme {
+fun NoteStatsPreview() = ScribbleSphereTheme {
     NoteStats(
         title = "Title",
         description = "Description",

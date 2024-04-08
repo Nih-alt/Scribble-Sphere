@@ -42,10 +42,10 @@ import com.nihal.scribblesphere.ui.theme.FadeIn
 import com.nihal.scribblesphere.ui.theme.FadeOut
 
 @Composable
-fun NotifyApp(navController: NavHostController = rememberNavController()) {
+fun ScribbleSphereApp(navController: NavHostController = rememberNavController()) {
     val screensWithHiddenNavBar = listOf(
-        "${NotifyScreens.AddEditNotes.name}/{noteId}",
-        NotifyScreens.TrashNoteScreen.name
+        "${ScribbleSphereScreens.AddEditNotes.name}/{noteId}",
+        ScribbleSphereScreens.TrashNoteScreen.name
     )
 
     val backStackEntry = navController.currentBackStackEntryAsState()
@@ -81,7 +81,7 @@ fun NotifyApp(navController: NavHostController = rememberNavController()) {
     ) { scaffoldPadding ->
         NavHost(
             navController = navController,
-            startDestination = NotifyScreens.Notes.name,
+            startDestination = ScribbleSphereScreens.Notes.name,
             modifier = Modifier.padding(scaffoldPadding),
             enterTransition = { FadeIn },
             exitTransition = { FadeOut },
@@ -89,18 +89,18 @@ fun NotifyApp(navController: NavHostController = rememberNavController()) {
             popExitTransition = { FadeOut }
         ) {
             composable(
-                route = NotifyScreens.Notes.name
+                route = ScribbleSphereScreens.Notes.name
             ) {
                 NoteScreen(
-                    onFabClicked = { navController.navigate(NotifyScreens.AddEditNotes.name + "/-1") },
+                    onFabClicked = { navController.navigate(ScribbleSphereScreens.AddEditNotes.name + "/-1") },
                     navigateToUpdateNoteScreen = { noteId ->
-                        navController.navigate("${NotifyScreens.AddEditNotes.name}/$noteId")
+                        navController.navigate("${ScribbleSphereScreens.AddEditNotes.name}/$noteId")
                     }
                 )
             }
 
             composable(
-                route = "${NotifyScreens.AddEditNotes.name}/{noteId}",
+                route = "${ScribbleSphereScreens.AddEditNotes.name}/{noteId}",
                 arguments = listOf(navArgument("noteId") { type = IntType })
             ) { backStack ->
                 AddEditRoute(
@@ -110,13 +110,13 @@ fun NotifyApp(navController: NavHostController = rememberNavController()) {
             }
 
             composable(
-                route = NotifyScreens.Settings.name
+                route = ScribbleSphereScreens.Settings.name
             ) {
                 SettingsScreen(controller = navController)
             }
 
             composable(
-                route = NotifyScreens.TrashNoteScreen.name
+                route = ScribbleSphereScreens.TrashNoteScreen.name
             ) {
                 TrashNoteScreen(trashNoteState = state, onEvent = trashViewModel::onEvent)
             }
@@ -138,12 +138,12 @@ fun BottomNavigationBar(
             val bottomNavItem = listOf(
                 BottomNavItem(
                     name = "Notes",
-                    route = NotifyScreens.Notes.name,
+                    route = ScribbleSphereScreens.Notes.name,
                     icon = ImageVector.vectorResource(R.drawable.note_outline)
                 ),
                 BottomNavItem(
                     name = "Settings",
-                    route = NotifyScreens.Settings.name,
+                    route = ScribbleSphereScreens.Settings.name,
                     icon = ImageVector.vectorResource(R.drawable.settings_outline)
                 )
             )

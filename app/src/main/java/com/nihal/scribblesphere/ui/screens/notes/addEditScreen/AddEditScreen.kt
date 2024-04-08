@@ -57,7 +57,7 @@ import com.nihal.scribblesphere.ui.screens.notes.addEditScreen.components.Descri
 import com.nihal.scribblesphere.ui.screens.notes.addEditScreen.components.NoteChecklist
 import com.nihal.scribblesphere.ui.screens.notes.addEditScreen.components.NoteImages
 import com.nihal.scribblesphere.ui.screens.notes.addEditScreen.components.NoteStats
-import com.nihal.scribblesphere.ui.theme.NotifyTheme
+import com.nihal.scribblesphere.ui.theme.ScribbleSphereTheme
 import com.nihal.scribblesphere.utils.formatReminderDateTime
 import java.time.LocalDateTime
 import java.util.Date
@@ -345,7 +345,7 @@ fun AddEditScreen(
 
 @Preview(showBackground = true)
 @Composable
-private fun AddEditScreenPreview() = NotifyTheme {
+private fun AddEditScreenPreview() = ScribbleSphereTheme {
     AddEditScreen(
         note = Note(
             title = "Title",

@@ -25,7 +25,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.nihal.scribblesphere.R
-import com.nihal.scribblesphere.ui.theme.NotifyTheme
+import com.nihal.scribblesphere.ui.theme.ScribbleSphereTheme
 import me.saket.telephoto.zoomable.coil.ZoomableAsyncImage
 
 @Composable
@@ -96,7 +96,7 @@ private fun ImageItem(
 
 @Preview(showBackground = true)
 @Composable
-private fun NoteImagesPreview() = NotifyTheme {
+private fun NoteImagesPreview() = ScribbleSphereTheme {
     NoteImages(
         images = listOf(),
         onRemoveImage = {},

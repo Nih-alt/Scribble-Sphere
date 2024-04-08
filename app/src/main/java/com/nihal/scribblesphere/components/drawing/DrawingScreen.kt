@@ -29,7 +29,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.content.FileProvider
-import com.nihal.scribblesphere.ui.theme.NotifyTheme
+import com.nihal.scribblesphere.ui.theme.ScribbleSphereTheme
 import java.io.File
 
 @Composable
@@ -152,7 +152,7 @@ private fun Bitmap.saveToDisk(context: Context): Uri {
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() = NotifyTheme {
+fun DefaultPreview() = ScribbleSphereTheme {
     DrawingScreen(
         onBack = {},
         onSave = { }

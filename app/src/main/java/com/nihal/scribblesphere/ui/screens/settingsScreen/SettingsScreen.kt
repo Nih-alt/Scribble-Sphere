@@ -28,7 +28,7 @@ import androidx.navigation.NavController
 import com.nihal.scribblesphere.R
 import com.nihal.scribblesphere.components.actions.SettingsComponent
 import com.nihal.scribblesphere.components.actions.SettingsSwitchCard
-import com.nihal.scribblesphere.navigation.NotifyScreens
+import com.nihal.scribblesphere.navigation.ScribbleSphereScreens
 import com.nihal.scribblesphere.ui.screens.MainActivity
 import com.nihal.scribblesphere.utils.Const
 import com.nihal.scribblesphere.utils.shareApp
@@ -87,7 +87,7 @@ fun SettingsScreen(controller: NavController) {
                         settingHeaderText = stringResource(id = R.string.trash),
                         painterResourceID = R.drawable.ic_delete
                     ) {
-                        controller.navigate(NotifyScreens.TrashNoteScreen.name)
+                        controller.navigate(ScribbleSphereScreens.TrashNoteScreen.name)
                     }
                 }
 
@@ -166,7 +166,7 @@ fun SettingsScreen(controller: NavController) {
                         context.startActivity(intent)
                     }
                     SettingsComponent(
-                        settingHeaderText = stringResource(R.string.share_notify),
+                        settingHeaderText = stringResource(R.string.share_scribble_sphere),
                         painterResourceID = R.drawable.share_icon
                     ) {
                         shareApp(context)

@@ -27,7 +27,7 @@
     <string name="import_data">Import Data</string>
     <string name="product">Product</string>
     <string name="request_feature">Request Feature</string>
-    <string name="share_notify">Share Notify</string>
+    <string name="share_scribble_sphere">Share Scribble Sphere</string>
     <string name="app_settings">App Settings</string>
     <string name="security">Security</string>
     <string name="biometric">Biometric</string>
@@ -49,7 +49,7 @@
     <string name="add_image">Add image</string>
     <string name="take_image">Take Photo</string>
     <string name="add_box">Add Box</string>
-    <string name="default_notification_channel_id">notify</string>
+    <string name="default_notification_channel_id">scribble_sphere</string>
     <string name="request_notification_permission">Request permission</string>
     <string name="notification_permission_title">Notification permission</string>
     <string name="notification_permission_description">The notification permission is important for this app. Please grant the permission.</string>

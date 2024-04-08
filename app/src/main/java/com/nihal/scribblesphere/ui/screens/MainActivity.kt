@@ -11,8 +11,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.nihal.scribblesphere.components.biometric.AppBioMetricManager
-import com.nihal.scribblesphere.navigation.NotifyApp
-import com.nihal.scribblesphere.ui.theme.NotifyTheme
+import com.nihal.scribblesphere.navigation.ScribbleSphereApp
+import com.nihal.scribblesphere.ui.theme.ScribbleSphereTheme
 import com.nihal.scribblesphere.viewmodel.MainViewModel
 import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
@@ -53,8 +53,8 @@ class MainActivity : FragmentActivity() {
             }
         }
         setContent {
-            NotifyTheme {
-                NotifyApp()
+            ScribbleSphereTheme {
+                ScribbleSphereApp()
             }
         }
 
